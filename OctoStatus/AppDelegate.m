@@ -7,45 +7,85 @@
 //
 
 #import "AppDelegate.h"
+#import "GHStatusAPIManager.h"
+#import <UserNotifications/UserNotifications.h>
+#import "Utility.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic) GHStatus *status;
 
 @end
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	// Override point for customization after application launch.
+	
+	[application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
+	
+	UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+	[center requestAuthorizationWithOptions:(UNAuthorizationOptionBadge | UNAuthorizationOptionSound | UNAuthorizationOptionAlert)
+												completionHandler:^(BOOL granted, NSError * _Nullable error) {
+													if (granted){
+														NSLog(@"notification granted");
+													}
+												}];
+	
+	[UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+	
+	[Utility clearAPI];
+	
 	return YES;
 }
 
-
-- (void)applicationWillResignActive:(UIApplication *)application {
-	// Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-	// Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+- (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+	
+	NSLog(@"checking lastest status");
+	[[[[GHStatusAPIManager sharedManager] lastMessage] subscribeOn:[RACScheduler mainThreadScheduler]] subscribeNext:^(GHStatus *status) {
+		
+		NSLog(@"lastest status: %@", status.body);
+		GHStatus *savedStatus = [Utility lastestStatus];
+		if (savedStatus && ![savedStatus.body isEqualToString:status.body]){
+			NSLog(@"status changed, firing notification");
+			[self notify:status.body];
+		}
+		else{
+			NSLog(@"status not changed, dismissing");
+		}
+		
+		_status = status;
+	} error:^(NSError *error) {
+		NSLog(@"status check error: %@", error);
+		completionHandler(UIBackgroundFetchResultFailed);
+	} completed:^{
+		[Utility saveLatestStatus:_status];
+		NSLog(@"status check completed");
+		completionHandler(UIBackgroundFetchResultNewData);
+	}];
+	
 }
 
+- (void)notify:(NSString *) text {
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-	// Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-	// If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+	UNMutableNotificationContent *objNotificationContent = [[UNMutableNotificationContent alloc] init];
+	objNotificationContent.title = [NSString localizedUserNotificationStringForKey:@"GitHub Status" arguments:nil];
+	objNotificationContent.body = [NSString localizedUserNotificationStringForKey:text arguments:nil];
+	objNotificationContent.sound = [UNNotificationSound defaultSound];
+	
+	objNotificationContent.badge = @(1);
+
+	UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:@"octostatus-notification-request"
+																																				content:objNotificationContent trigger:nil];
+	
+	UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+	[center addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
+		if (error) {
+			NSLog(@"notification failed with error: %@", error);
+		}
+		else {
+			NSLog(@"notification sent");
+		}
+	}];
 }
-
-
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-	// Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-}
-
-
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-	// Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-
-- (void)applicationWillTerminate:(UIApplication *)application {
-	// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
-
 
 @end

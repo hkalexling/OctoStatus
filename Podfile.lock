@@ -1,0 +1,35 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - ISO8601DateFormatter (0.8)
+  - ReactiveObjC (2.1.0)
+  - SCSkypeActivityIndicatorView (1.0.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.0)
+  - ISO8601DateFormatter
+  - ReactiveObjC
+  - SCSkypeActivityIndicatorView
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  ISO8601DateFormatter: 4551b6ce4f83185425f583b0b3feb3c7b59b942c
+  ReactiveObjC: 2edae120982d8e6d5407503a10edcfdd87eb8639
+  SCSkypeActivityIndicatorView: 4e98ca2ba8f092786c3b1e79168df228b4ce27ba
+
+PODFILE CHECKSUM: fdf4b4f98ec64f6961b28e39181e65908019edde
+
+COCOAPODS: 1.1.1

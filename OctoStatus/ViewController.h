@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SCSkypeActivityIndicatorView/SCSkypeActivityIndicatorView.h>
 
 @interface ViewController : UIViewController
 

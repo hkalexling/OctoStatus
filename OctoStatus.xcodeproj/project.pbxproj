@@ -7,15 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02D1440CD2046AD48980DD44 /* Pods_OctoStatus_Today.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ED7B83C3FE599806C84114 /* Pods_OctoStatus_Today.framework */; };
 		71CFC9651DF04075000ABC3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CFC9641DF04075000ABC3B /* main.m */; };
 		71CFC9681DF04076000ABC3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CFC9671DF04076000ABC3B /* AppDelegate.m */; };
 		71CFC96B1DF04076000ABC3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CFC96A1DF04076000ABC3B /* ViewController.m */; };
 		71CFC96E1DF04076000ABC3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71CFC96C1DF04076000ABC3B /* Main.storyboard */; };
 		71CFC9701DF04076000ABC3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71CFC96F1DF04076000ABC3B /* Assets.xcassets */; };
 		71CFC9731DF04076000ABC3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71CFC9711DF04076000ABC3B /* LaunchScreen.storyboard */; };
+		71CFC97C1DF042F4000ABC3B /* GHStatusAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CFC97B1DF042F4000ABC3B /* GHStatusAPIManager.m */; };
+		71F6F4851DF0667C00D4DB28 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F6F4841DF0667C00D4DB28 /* UserNotifications.framework */; };
+		71F6F4881DF06F4800D4DB28 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F6F4871DF06F4800D4DB28 /* Utility.m */; };
+		71F6F48B1DF071BF00D4DB28 /* GHStatusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F6F48A1DF071BF00D4DB28 /* GHStatusModel.m */; };
+		71F6F48E1DF08B0300D4DB28 /* UIColor+Addision.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F6F48D1DF08B0300D4DB28 /* UIColor+Addision.m */; };
+		71F6F4B41DF090A000D4DB28 /* UIScreen+Addision.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F6F4B31DF090A000D4DB28 /* UIScreen+Addision.m */; };
+		71F6F4BB1DF0984200D4DB28 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F6F4BA1DF0984200D4DB28 /* NotificationCenter.framework */; };
+		71F6F4BF1DF0984200D4DB28 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F6F4BE1DF0984200D4DB28 /* TodayViewController.m */; };
+		71F6F4C21DF0984200D4DB28 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F6F4C01DF0984200D4DB28 /* MainInterface.storyboard */; };
+		71F6F4C61DF0984200D4DB28 /* OctoStatus-Today.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 71F6F4B91DF0984200D4DB28 /* OctoStatus-Today.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		71F6F4CD1DF09EB600D4DB28 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F6F4871DF06F4800D4DB28 /* Utility.m */; };
+		71F6F4CE1DF09F8400D4DB28 /* GHStatusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F6F48A1DF071BF00D4DB28 /* GHStatusModel.m */; };
+		71F6F4D01DF09F8B00D4DB28 /* UIColor+Addision.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F6F48D1DF08B0300D4DB28 /* UIColor+Addision.m */; };
+		71F6F4D41DF0A1F000D4DB28 /* GHStatusAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CFC97B1DF042F4000ABC3B /* GHStatusAPIManager.m */; };
+		71F6F4D51DF0A99D00D4DB28 /* UIScreen+Addision.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F6F4B31DF090A000D4DB28 /* UIScreen+Addision.m */; };
+		EBC5031A225FB5936CA2A5B3 /* Pods_OctoStatus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEDBD08D7B54B1EAB5CC3A1 /* Pods_OctoStatus.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		71F6F4C41DF0984200D4DB28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71CFC9581DF04075000ABC3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71F6F4B81DF0984200D4DB28;
+			remoteInfo = "OctoStatus-Today";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		71F6F4CA1DF0984200D4DB28 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				71F6F4C61DF0984200D4DB28 /* OctoStatus-Today.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2B7F7B17AA72179FAE708E47 /* Pods-OctoStatus-Today.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoStatus-Today.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OctoStatus-Today/Pods-OctoStatus-Today.debug.xcconfig"; sourceTree = "<group>"; };
+		47B843B158CD58BD5519898E /* Pods-OctoStatus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoStatus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OctoStatus/Pods-OctoStatus.debug.xcconfig"; sourceTree = "<group>"; };
 		71CFC9601DF04075000ABC3B /* OctoStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OctoStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71CFC9641DF04075000ABC3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		71CFC9661DF04076000ABC3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +69,30 @@
 		71CFC96F1DF04076000ABC3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71CFC9721DF04076000ABC3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71CFC9741DF04076000ABC3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71CFC97A1DF042F4000ABC3B /* GHStatusAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHStatusAPIManager.h; sourceTree = "<group>"; };
+		71CFC97B1DF042F4000ABC3B /* GHStatusAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHStatusAPIManager.m; sourceTree = "<group>"; };
+		71F6F4841DF0667C00D4DB28 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		71F6F4861DF06F4800D4DB28 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		71F6F4871DF06F4800D4DB28 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		71F6F4891DF071BF00D4DB28 /* GHStatusModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHStatusModel.h; sourceTree = "<group>"; };
+		71F6F48A1DF071BF00D4DB28 /* GHStatusModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHStatusModel.m; sourceTree = "<group>"; };
+		71F6F48C1DF08B0300D4DB28 /* UIColor+Addision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Addision.h"; sourceTree = "<group>"; };
+		71F6F48D1DF08B0300D4DB28 /* UIColor+Addision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Addision.m"; sourceTree = "<group>"; };
+		71F6F4B21DF090A000D4DB28 /* UIScreen+Addision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Addision.h"; sourceTree = "<group>"; };
+		71F6F4B31DF090A000D4DB28 /* UIScreen+Addision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Addision.m"; sourceTree = "<group>"; };
+		71F6F4B91DF0984200D4DB28 /* OctoStatus-Today.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "OctoStatus-Today.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71F6F4BA1DF0984200D4DB28 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		71F6F4BD1DF0984200D4DB28 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		71F6F4BE1DF0984200D4DB28 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		71F6F4C11DF0984200D4DB28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		71F6F4C31DF0984200D4DB28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71F6F4CB1DF09B3700D4DB28 /* OctoStatus-Today.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "OctoStatus-Today.entitlements"; sourceTree = "<group>"; };
+		71F6F4CC1DF09BA900D4DB28 /* OctoStatus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OctoStatus.entitlements; sourceTree = "<group>"; };
+		71F6F4D11DF09FD700D4DB28 /* Pods_OctoStatus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_OctoStatus.framework; path = "../../Library/Developer/Xcode/DerivedData/OctoStatus-bujqlwgevpcrxaecdigjnawsioah/Build/Products/Debug-iphonesimulator/Pods_OctoStatus.framework"; sourceTree = "<group>"; };
+		7BEDBD08D7B54B1EAB5CC3A1 /* Pods_OctoStatus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OctoStatus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9653DC646B9540E7CF979A15 /* Pods-OctoStatus-Today.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoStatus-Today.release.xcconfig"; path = "Pods/Target Support Files/Pods-OctoStatus-Today/Pods-OctoStatus-Today.release.xcconfig"; sourceTree = "<group>"; };
+		CCB4443D78082A46C6B89700 /* Pods-OctoStatus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoStatus.release.xcconfig"; path = "Pods/Target Support Files/Pods-OctoStatus/Pods-OctoStatus.release.xcconfig"; sourceTree = "<group>"; };
+		F8ED7B83C3FE599806C84114 /* Pods_OctoStatus_Today.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OctoStatus_Today.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +100,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71F6F4851DF0667C00D4DB28 /* UserNotifications.framework in Frameworks */,
+				EBC5031A225FB5936CA2A5B3 /* Pods_OctoStatus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71F6F4B61DF0984200D4DB28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71F6F4BB1DF0984200D4DB28 /* NotificationCenter.framework in Frameworks */,
+				02D1440CD2046AD48980DD44 /* Pods_OctoStatus_Today.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44B10AA9E38B62DC75B43C6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71F6F4D11DF09FD700D4DB28 /* Pods_OctoStatus.framework */,
+				71F6F4841DF0667C00D4DB28 /* UserNotifications.framework */,
+				7BEDBD08D7B54B1EAB5CC3A1 /* Pods_OctoStatus.framework */,
+				71F6F4BA1DF0984200D4DB28 /* NotificationCenter.framework */,
+				F8ED7B83C3FE599806C84114 /* Pods_OctoStatus_Today.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		71CFC9571DF04075000ABC3B = {
 			isa = PBXGroup;
 			children = (
 				71CFC9621DF04075000ABC3B /* OctoStatus */,
+				71F6F4BC1DF0984200D4DB28 /* OctoStatus-Today */,
 				71CFC9611DF04075000ABC3B /* Products */,
+				AEE82227D2C8BB73E5BD91FA /* Pods */,
+				44B10AA9E38B62DC75B43C6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				71CFC9601DF04075000ABC3B /* OctoStatus.app */,
+				71F6F4B91DF0984200D4DB28 /* OctoStatus-Today.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,10 +152,21 @@
 		71CFC9621DF04075000ABC3B /* OctoStatus */ = {
 			isa = PBXGroup;
 			children = (
+				71F6F4CC1DF09BA900D4DB28 /* OctoStatus.entitlements */,
 				71CFC9661DF04076000ABC3B /* AppDelegate.h */,
 				71CFC9671DF04076000ABC3B /* AppDelegate.m */,
 				71CFC9691DF04076000ABC3B /* ViewController.h */,
 				71CFC96A1DF04076000ABC3B /* ViewController.m */,
+				71F6F4891DF071BF00D4DB28 /* GHStatusModel.h */,
+				71F6F48A1DF071BF00D4DB28 /* GHStatusModel.m */,
+				71CFC97A1DF042F4000ABC3B /* GHStatusAPIManager.h */,
+				71CFC97B1DF042F4000ABC3B /* GHStatusAPIManager.m */,
+				71F6F4861DF06F4800D4DB28 /* Utility.h */,
+				71F6F4871DF06F4800D4DB28 /* Utility.m */,
+				71F6F48C1DF08B0300D4DB28 /* UIColor+Addision.h */,
+				71F6F48D1DF08B0300D4DB28 /* UIColor+Addision.m */,
+				71F6F4B21DF090A000D4DB28 /* UIScreen+Addision.h */,
+				71F6F4B31DF090A000D4DB28 /* UIScreen+Addision.m */,
 				71CFC96C1DF04076000ABC3B /* Main.storyboard */,
 				71CFC96F1DF04076000ABC3B /* Assets.xcassets */,
 				71CFC9711DF04076000ABC3B /* LaunchScreen.storyboard */,
@@ -79,6 +184,29 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		71F6F4BC1DF0984200D4DB28 /* OctoStatus-Today */ = {
+			isa = PBXGroup;
+			children = (
+				71F6F4CB1DF09B3700D4DB28 /* OctoStatus-Today.entitlements */,
+				71F6F4BD1DF0984200D4DB28 /* TodayViewController.h */,
+				71F6F4BE1DF0984200D4DB28 /* TodayViewController.m */,
+				71F6F4C01DF0984200D4DB28 /* MainInterface.storyboard */,
+				71F6F4C31DF0984200D4DB28 /* Info.plist */,
+			);
+			path = "OctoStatus-Today";
+			sourceTree = "<group>";
+		};
+		AEE82227D2C8BB73E5BD91FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47B843B158CD58BD5519898E /* Pods-OctoStatus.debug.xcconfig */,
+				CCB4443D78082A46C6B89700 /* Pods-OctoStatus.release.xcconfig */,
+				2B7F7B17AA72179FAE708E47 /* Pods-OctoStatus-Today.debug.xcconfig */,
+				9653DC646B9540E7CF979A15 /* Pods-OctoStatus-Today.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,18 +214,42 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71CFC9771DF04076000ABC3B /* Build configuration list for PBXNativeTarget "OctoStatus" */;
 			buildPhases = (
+				F70A05D2F6C8083C8206C088 /* [CP] Check Pods Manifest.lock */,
 				71CFC95C1DF04075000ABC3B /* Sources */,
 				71CFC95D1DF04075000ABC3B /* Frameworks */,
 				71CFC95E1DF04075000ABC3B /* Resources */,
+				2A24DCEE54F6645CFDF39609 /* [CP] Embed Pods Frameworks */,
+				085617A4909680FDCE47D7B1 /* [CP] Copy Pods Resources */,
+				71F6F4CA1DF0984200D4DB28 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				71F6F4C51DF0984200D4DB28 /* PBXTargetDependency */,
 			);
 			name = OctoStatus;
 			productName = OctoStatus;
 			productReference = 71CFC9601DF04075000ABC3B /* OctoStatus.app */;
 			productType = "com.apple.product-type.application";
+		};
+		71F6F4B81DF0984200D4DB28 /* OctoStatus-Today */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71F6F4C71DF0984200D4DB28 /* Build configuration list for PBXNativeTarget "OctoStatus-Today" */;
+			buildPhases = (
+				0DB5DEE66AA73F74CE62027F /* [CP] Check Pods Manifest.lock */,
+				71F6F4B51DF0984200D4DB28 /* Sources */,
+				71F6F4B61DF0984200D4DB28 /* Frameworks */,
+				71F6F4B71DF0984200D4DB28 /* Resources */,
+				6B552B369E6F756B9EA82794 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OctoStatus-Today";
+			productName = "OctoStatus-Today";
+			productReference = 71F6F4B91DF0984200D4DB28 /* OctoStatus-Today.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -112,6 +264,24 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 9947S4AFL2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					71F6F4B81DF0984200D4DB28 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 9947S4AFL2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -129,6 +299,7 @@
 			projectRoot = "";
 			targets = (
 				71CFC95F1DF04075000ABC3B /* OctoStatus */,
+				71F6F4B81DF0984200D4DB28 /* OctoStatus-Today */,
 			);
 		};
 /* End PBXProject section */
@@ -144,20 +315,132 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		71F6F4B71DF0984200D4DB28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71F6F4C21DF0984200D4DB28 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		085617A4909680FDCE47D7B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OctoStatus/Pods-OctoStatus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0DB5DEE66AA73F74CE62027F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2A24DCEE54F6645CFDF39609 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OctoStatus/Pods-OctoStatus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B552B369E6F756B9EA82794 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OctoStatus-Today/Pods-OctoStatus-Today-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F70A05D2F6C8083C8206C088 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		71CFC95C1DF04075000ABC3B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71F6F48E1DF08B0300D4DB28 /* UIColor+Addision.m in Sources */,
+				71F6F48B1DF071BF00D4DB28 /* GHStatusModel.m in Sources */,
+				71F6F4B41DF090A000D4DB28 /* UIScreen+Addision.m in Sources */,
 				71CFC96B1DF04076000ABC3B /* ViewController.m in Sources */,
 				71CFC9681DF04076000ABC3B /* AppDelegate.m in Sources */,
+				71F6F4881DF06F4800D4DB28 /* Utility.m in Sources */,
 				71CFC9651DF04075000ABC3B /* main.m in Sources */,
+				71CFC97C1DF042F4000ABC3B /* GHStatusAPIManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71F6F4B51DF0984200D4DB28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71F6F4D41DF0A1F000D4DB28 /* GHStatusAPIManager.m in Sources */,
+				71F6F4CE1DF09F8400D4DB28 /* GHStatusModel.m in Sources */,
+				71F6F4D51DF0A99D00D4DB28 /* UIScreen+Addision.m in Sources */,
+				71F6F4CD1DF09EB600D4DB28 /* Utility.m in Sources */,
+				71F6F4BF1DF0984200D4DB28 /* TodayViewController.m in Sources */,
+				71F6F4D01DF09F8B00D4DB28 /* UIColor+Addision.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71F6F4C51DF0984200D4DB28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71F6F4B81DF0984200D4DB28 /* OctoStatus-Today */;
+			targetProxy = 71F6F4C41DF0984200D4DB28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		71CFC96C1DF04076000ABC3B /* Main.storyboard */ = {
@@ -174,6 +457,14 @@
 				71CFC9721DF04076000ABC3B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		71F6F4C01DF0984200D4DB28 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71F6F4C11DF0984200D4DB28 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -271,10 +562,13 @@
 		};
 		71CFC9781DF04076000ABC3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47B843B158CD58BD5519898E /* Pods-OctoStatus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OctoStatus/OctoStatus.entitlements;
 				DEVELOPMENT_TEAM = 9947S4AFL2;
 				INFOPLIST_FILE = OctoStatus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hkalexling.OctoStatus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -283,13 +577,44 @@
 		};
 		71CFC9791DF04076000ABC3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCB4443D78082A46C6B89700 /* Pods-OctoStatus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OctoStatus/OctoStatus.entitlements;
 				DEVELOPMENT_TEAM = 9947S4AFL2;
 				INFOPLIST_FILE = OctoStatus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hkalexling.OctoStatus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		71F6F4C81DF0984200D4DB28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B7F7B17AA72179FAE708E47 /* Pods-OctoStatus-Today.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "OctoStatus-Today/OctoStatus-Today.entitlements";
+				DEVELOPMENT_TEAM = 9947S4AFL2;
+				INFOPLIST_FILE = "OctoStatus-Today/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hkalexling.OctoStatus.OctoStatus-Today";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		71F6F4C91DF0984200D4DB28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9653DC646B9540E7CF979A15 /* Pods-OctoStatus-Today.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "OctoStatus-Today/OctoStatus-Today.entitlements";
+				DEVELOPMENT_TEAM = 9947S4AFL2;
+				INFOPLIST_FILE = "OctoStatus-Today/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hkalexling.OctoStatus.OctoStatus-Today";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -312,6 +637,16 @@
 				71CFC9791DF04076000ABC3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71F6F4C71DF0984200D4DB28 /* Build configuration list for PBXNativeTarget "OctoStatus-Today" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71F6F4C81DF0984200D4DB28 /* Debug */,
+				71F6F4C91DF0984200D4DB28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
