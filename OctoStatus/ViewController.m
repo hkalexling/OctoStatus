@@ -31,6 +31,8 @@
 	
 	_moreBtnState = 0;
 	
+	[self setNeedsStatusBarAppearanceUpdate];
+	
 	_loading = [[DGActivityIndicatorView alloc] initWithType:DGActivityIndicatorAnimationTypeBallScaleRippleMultiple tintColor:[UIColor whiteColor] size:200];
 	_loading.center = self.view.center;
 	[_loading startAnimating];
@@ -114,6 +116,15 @@
 	}];
 }
 
+- (UIStatusBarStyle) preferredStatusBarStyle {
+	if (_moreBtnState == 2){
+		return UIStatusBarStyleDefault;
+	}
+	else{
+		return UIStatusBarStyleLightContent;
+	}
+}
+
 - (void)moreTapped {
 	if (_moreBtnState == 0){
 		_moreBtnState = 1;
@@ -123,12 +134,14 @@
 			_moreBtn.transform = CGAffineTransformMakeScale(scale, scale);
 		} completion:^(BOOL finished) {
 			_moreBtnState = 2;
+			[self setNeedsStatusBarAppearanceUpdate];
 			[self setUpMoreView];
 		}];
 	}
 	else if (_moreBtnState == 2){
 		[self destroyMoreView];
 		_moreBtnState = 1;
+		[self setNeedsStatusBarAppearanceUpdate];
 		[UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
 			_moreBtn.transform = CGAffineTransformIdentity;
 		} completion:^(BOOL finished) {
