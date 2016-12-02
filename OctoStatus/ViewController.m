@@ -22,6 +22,8 @@
 
 @property NSUInteger moreBtnState;
 
+@property BOOL firstLaunch;
+
 @end
 
 @implementation ViewController
@@ -29,9 +31,12 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
+	_firstLaunch = YES;
 	_moreBtnState = 0;
 	_moreVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"moreVC"];
 	_moreVC.delegate = self;
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didBecomeActive) name:UIApplicationDidBecomeActiveNotification object:nil];
 	
 	[self setNeedsStatusBarAppearanceUpdate];
 	
@@ -83,6 +88,16 @@
 	[self fetch];
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+	_firstLaunch = NO;
+}
+
+- (void)didBecomeActive {
+	if (_firstLaunch) return;
+	
+	[self updateViewWith:[Utility lastestStatus]];
+}
+
 - (void)fetch {
 	_body.alpha = 0;
 	_updateTimeLabel.alpha = 0;
@@ -100,6 +115,8 @@
 }
 
 - (void)updateViewWith:(GHStatus *) status {
+	if (!status) return;
+	
 	_body.text = status.body;
 	CGRect frame = _body.frame;
 	frame.size = [_body sizeThatFits:CGSizeMake([UIScreen size].width * 0.9, CGFLOAT_MAX)];
@@ -132,7 +149,7 @@
 		_moreBtnState = 1;
 		CGFloat radius = hypotf([UIScreen size].width, [UIScreen size].height);
 		CGFloat scale = radius / _moreBtn.layer.cornerRadius;
-		[UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+		[UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
 			_moreBtn.transform = CGAffineTransformMakeScale(scale, scale);
 		} completion:^(BOOL finished) {
 			_moreBtnState = 2;
@@ -144,7 +161,7 @@
 		[self destroyMoreView];
 		_moreBtnState = 1;
 		[self setNeedsStatusBarAppearanceUpdate];
-		[UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+		[UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
 			_moreBtn.transform = CGAffineTransformIdentity;
 		} completion:^(BOOL finished) {
 			_moreBtnState = 0;
