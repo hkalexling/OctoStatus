@@ -105,7 +105,7 @@
 			return nil;
 		}];
 	}
-	return [[self jsonFromURL:@"https://status.github.com/api.json" parameters:nil] flattenMap:^__kindof RACSignal * _Nullable(id  _Nullable value) {
+	return [[self jsonFromURL:kAPIURL parameters:nil] flattenMap:^__kindof RACSignal * _Nullable(id  _Nullable value) {
 		return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
 			
 			GHStatusAPI *api = [GHStatusAPI new];

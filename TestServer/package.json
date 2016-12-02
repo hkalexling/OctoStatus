@@ -1,0 +1,12 @@
+{
+  "name": "test-server",
+  "version": "1.0.0",
+  "description": "test server for OctoStatus iOS",
+  "main": "index.js",
+  "author": "hkalexling@gmail.com",
+  "license": "WTFPL",
+  "dependencies": {
+    "express": "latest",
+    "http": "latest"
+  }
+}

@@ -13,6 +13,9 @@
 #import "GHStatusModel.h"
 #import "Utility.h"
 
+#define kAPIURL @"https://status.github.com/api.json"
+//#define kAPIURL @"http://192.168.1.161:8000/api.json"
+
 @interface GHStatusAPIManager : NSObject
 
 + (instancetype)sharedManager;

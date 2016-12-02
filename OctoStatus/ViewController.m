@@ -30,6 +30,8 @@
 	[super viewDidLoad];
 	
 	_moreBtnState = 0;
+	_moreVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"moreVC"];
+	_moreVC.delegate = self;
 	
 	[self setNeedsStatusBarAppearanceUpdate];
 	
@@ -151,8 +153,6 @@
 }
 
 - (void)setUpMoreView {
-	_moreVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"moreVC"];
-	_moreVC.delegate = self;
 	[self addChildViewController:_moreVC];
 	_moreVCView = _moreVC.view;
 	[self.view addSubview:_moreVC.view];
