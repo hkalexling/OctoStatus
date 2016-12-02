@@ -25,17 +25,25 @@
 	GHStatus *latest = [Utility lastestStatus];
 	[self updateUIWith:latest];
 	
+	_loading.backgroundColor = [UIColor clearColor];
+	_loading.size = 30;
+	[_loading setType:DGActivityIndicatorAnimationTypeBallClipRotate];
+	_loading.tintColor = [UIColor whiteColor];
+	[self.view addSubview:_loading];
 }
 
 - (void)widgetPerformUpdateWithCompletionHandler:(void (^)(NCUpdateResult))completionHandler {
 	
+	[_loading startAnimating];
 	[[[[GHStatusAPIManager sharedManager] lastMessage] subscribeOn:[RACScheduler mainThreadScheduler]] subscribeNext:^(GHStatus *status) {
 		[self updateUIWith:status];
 		[Utility saveLatestStatus:status];
 	} error:^(NSError * _Nullable error) {
 		NSLog(@"error: %@", error);
+		[_loading stopAnimating];
 		completionHandler(NCUpdateResultFailed);
 	} completed:^{
+		[_loading stopAnimating];
 		completionHandler(NCUpdateResultNewData);
 	}];
 }

@@ -13,7 +13,7 @@
 
 @interface ViewController ()
 
-@property (nonatomic) SCSkypeActivityIndicatorView *loading;
+@property (nonatomic) DGActivityIndicatorView *loading;
 @property (nonatomic) UILabel *body;
 @property (nonatomic) UITableView *tableView;
 @property (nonatomic) UIRefreshControl *refresh;
@@ -42,9 +42,10 @@
 	
 	[self.view addSubview:_tableView];
 	
-	_loading = [[SCSkypeActivityIndicatorView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
-	_loading.center = self.view.center;
 	self.view.backgroundColor = [UIColor colorWith:[Utility lastestStatus]];
+	
+	_loading = [[DGActivityIndicatorView alloc] initWithType:DGActivityIndicatorAnimationTypeBallScaleRippleMultiple tintColor:[UIColor whiteColor] size:200];
+	_loading.center = self.view.center;
 	[_loading startAnimating];
 	[self.view addSubview:_loading];
 	

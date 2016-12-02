@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <SCSkypeActivityIndicatorView/SCSkypeActivityIndicatorView.h>
+#import <DGActivityIndicatorView/DGActivityIndicatorView.h>
 
 @interface ViewController : UIViewController
 

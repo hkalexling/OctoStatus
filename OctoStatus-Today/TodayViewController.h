@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <DGActivityIndicatorView/DGActivityIndicatorView.h>
 
 @interface TodayViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *body;
+@property (weak, nonatomic) IBOutlet DGActivityIndicatorView *loading;
 
 @end
