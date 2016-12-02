@@ -18,6 +18,7 @@ typedef NSString* GHStatusCode;
 @property (nonatomic) GHStatusCode status;
 @property (nonatomic) NSString *body;
 @property (nonatomic) NSDate *time;
+@property (nonatomic) NSDate *fetchTime;
 
 @end
 

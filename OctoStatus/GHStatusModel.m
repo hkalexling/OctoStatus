@@ -14,6 +14,7 @@
 	[aCoder encodeObject:self.status forKey:@"status"];
 	[aCoder encodeObject:self.body forKey:@"body"];
 	[aCoder encodeObject:self.time forKey:@"time"];
+	[aCoder encodeObject:self.fetchTime forKey:@"fetchTime"];
 }
 
 - (id) initWithCoder:(NSCoder *)aDecoder {
@@ -22,6 +23,7 @@
 		self.status = [aDecoder decodeObjectForKey:@"status"];
 		self.body = [aDecoder decodeObjectForKey:@"body"];
 		self.time = [aDecoder decodeObjectForKey:@"time"];
+		self.fetchTime = [aDecoder decodeObjectForKey:@"fetchTime"];
 	}
 	return self;
 }

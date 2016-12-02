@@ -32,6 +32,7 @@
 					status.body = [value objectForKey:@"body"];
 					ISO8601DateFormatter *formatter = [ISO8601DateFormatter new];
 					status.time = [formatter dateFromString:[value objectForKey:@"last_updated"]];
+					status.fetchTime = [NSDate date];
 				}
 				[subscriber sendNext:status];
 				[subscriber sendCompleted];
@@ -54,7 +55,8 @@
 					status.status = [value objectForKey:@"status"];
 					status.body = [value objectForKey:@"body"];
 					ISO8601DateFormatter *formatter = [ISO8601DateFormatter new];
-					status.time = [formatter dateFromString:[value objectForKey:@"created_on"]];					
+					status.time = [formatter dateFromString:[value objectForKey:@"created_on"]];
+					status.fetchTime = [NSDate date];
 				}
 				[subscriber sendNext:status];
 				[subscriber sendCompleted];
@@ -80,6 +82,7 @@
 						statusObj.body = [status objectForKey:@"body"];
 						ISO8601DateFormatter *formatter = [ISO8601DateFormatter new];
 						statusObj.time = [formatter dateFromString:[status objectForKey:@"created_on"]];
+						statusObj.fetchTime = [NSDate date];
 						[subscriber sendNext:statusObj];
 					}
 				}

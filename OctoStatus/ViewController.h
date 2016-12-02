@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <DGActivityIndicatorView/DGActivityIndicatorView.h>
+#import "GHStatusAPIManager.h"
+#import "Utility.h"
+#import "MoreViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<MoreViewControllerDelegate>
 
 
 @end

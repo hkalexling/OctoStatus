@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "GHStatusModel.h"
+#import "UIColor+Addision.h"
+#import "UIScreen+Addision.h"
 
 @interface Utility : NSObject
 
@@ -20,5 +22,7 @@
 + (void)saveAPI:(GHStatusAPI *)api;
 + (GHStatusAPI *)api;
 + (void)clearAPI;
+
++ (NSString *)stringFrom:(NSDate *)date;
 
 @end

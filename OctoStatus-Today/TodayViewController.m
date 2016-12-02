@@ -8,10 +8,6 @@
 
 #import "TodayViewController.h"
 #import <NotificationCenter/NotificationCenter.h>
-#import "GHStatusAPIManager.h"
-#import "Utility.h"
-#import "UIColor+Addision.h"
-#import "UIScreen+Addision.h"
 
 @interface TodayViewController () <NCWidgetProviding>
 
@@ -21,6 +17,8 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
+	
+	self.extensionContext.widgetLargestAvailableDisplayMode = NCWidgetDisplayModeExpanded;
 	
 	GHStatus *latest = [Utility lastestStatus];
 	[self updateUIWith:latest];
@@ -48,11 +46,28 @@
 	}];
 }
 
+- (void)widgetActiveDisplayModeDidChange:(NCWidgetDisplayMode)activeDisplayMode
+												 withMaximumSize:(CGSize)maxSize {
+	if (activeDisplayMode == NCWidgetDisplayModeExpanded) {
+		self.preferredContentSize = CGSizeMake(maxSize.width, 150);
+		_bodyCenterYConstraint.constant = -20;
+		_updateTimeLabel.hidden = NO;
+	} else if (activeDisplayMode == NCWidgetDisplayModeCompact) {
+		self.preferredContentSize = maxSize;
+		_bodyCenterYConstraint.constant = 0;
+		_updateTimeLabel.hidden = YES;
+	}
+}
+
 - (void)updateUIWith:(GHStatus *) status {
 	self.view.backgroundColor = [UIColor colorWith:status];
 	_body.text = @"Loading";
 	if (status){
+		_updateTimeLabel.text = [NSString stringWithFormat:@"updated at: %@", [Utility stringFrom:status.fetchTime]];
 		_body.text = [NSString stringWithFormat:@"GitHub Status: %@", [status.status capitalizedString]];
+	}
+	else{
+		_updateTimeLabel.text = @"";
 	}
 }
 

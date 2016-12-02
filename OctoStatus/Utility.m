@@ -48,4 +48,10 @@
 	[[Utility userDefaults] removeObjectForKey:@"api"];
 }
 
++ (NSString *)stringFrom:(NSDate *)date {
+	NSDateFormatter *formatter = [NSDateFormatter new];
+	[formatter setDateFormat:@"HH:mm"];
+	return [formatter stringFromDate:date];
+}
+
 @end

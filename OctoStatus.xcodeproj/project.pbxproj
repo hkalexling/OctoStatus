@@ -29,6 +29,8 @@
 		71F6F4D01DF09F8B00D4DB28 /* UIColor+Addision.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F6F48D1DF08B0300D4DB28 /* UIColor+Addision.m */; };
 		71F6F4D41DF0A1F000D4DB28 /* GHStatusAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CFC97B1DF042F4000ABC3B /* GHStatusAPIManager.m */; };
 		71F6F4D51DF0A99D00D4DB28 /* UIScreen+Addision.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F6F4B31DF090A000D4DB28 /* UIScreen+Addision.m */; };
+		71F6F4D81DF1830300D4DB28 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F6F4D71DF1830300D4DB28 /* MoreViewController.m */; };
+		71F6F4DA1DF190A000D4DB28 /* more.html in Resources */ = {isa = PBXBuildFile; fileRef = 71F6F4D91DF190A000D4DB28 /* more.html */; };
 		EBC5031A225FB5936CA2A5B3 /* Pods_OctoStatus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEDBD08D7B54B1EAB5CC3A1 /* Pods_OctoStatus.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +91,9 @@
 		71F6F4CB1DF09B3700D4DB28 /* OctoStatus-Today.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "OctoStatus-Today.entitlements"; sourceTree = "<group>"; };
 		71F6F4CC1DF09BA900D4DB28 /* OctoStatus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OctoStatus.entitlements; sourceTree = "<group>"; };
 		71F6F4D11DF09FD700D4DB28 /* Pods_OctoStatus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_OctoStatus.framework; path = "../../Library/Developer/Xcode/DerivedData/OctoStatus-bujqlwgevpcrxaecdigjnawsioah/Build/Products/Debug-iphonesimulator/Pods_OctoStatus.framework"; sourceTree = "<group>"; };
+		71F6F4D61DF1830300D4DB28 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		71F6F4D71DF1830300D4DB28 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		71F6F4D91DF190A000D4DB28 /* more.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = more.html; sourceTree = "<group>"; };
 		7BEDBD08D7B54B1EAB5CC3A1 /* Pods_OctoStatus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OctoStatus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9653DC646B9540E7CF979A15 /* Pods-OctoStatus-Today.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoStatus-Today.release.xcconfig"; path = "Pods/Target Support Files/Pods-OctoStatus-Today/Pods-OctoStatus-Today.release.xcconfig"; sourceTree = "<group>"; };
 		CCB4443D78082A46C6B89700 /* Pods-OctoStatus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoStatus.release.xcconfig"; path = "Pods/Target Support Files/Pods-OctoStatus/Pods-OctoStatus.release.xcconfig"; sourceTree = "<group>"; };
@@ -157,6 +162,8 @@
 				71CFC9671DF04076000ABC3B /* AppDelegate.m */,
 				71CFC9691DF04076000ABC3B /* ViewController.h */,
 				71CFC96A1DF04076000ABC3B /* ViewController.m */,
+				71F6F4D61DF1830300D4DB28 /* MoreViewController.h */,
+				71F6F4D71DF1830300D4DB28 /* MoreViewController.m */,
 				71F6F4891DF071BF00D4DB28 /* GHStatusModel.h */,
 				71F6F48A1DF071BF00D4DB28 /* GHStatusModel.m */,
 				71CFC97A1DF042F4000ABC3B /* GHStatusAPIManager.h */,
@@ -167,6 +174,7 @@
 				71F6F48D1DF08B0300D4DB28 /* UIColor+Addision.m */,
 				71F6F4B21DF090A000D4DB28 /* UIScreen+Addision.h */,
 				71F6F4B31DF090A000D4DB28 /* UIScreen+Addision.m */,
+				71F6F4D91DF190A000D4DB28 /* more.html */,
 				71CFC96C1DF04076000ABC3B /* Main.storyboard */,
 				71CFC96F1DF04076000ABC3B /* Assets.xcassets */,
 				71CFC9711DF04076000ABC3B /* LaunchScreen.storyboard */,
@@ -312,6 +320,7 @@
 				71CFC9731DF04076000ABC3B /* LaunchScreen.storyboard in Resources */,
 				71CFC9701DF04076000ABC3B /* Assets.xcassets in Resources */,
 				71CFC96E1DF04076000ABC3B /* Main.storyboard in Resources */,
+				71F6F4DA1DF190A000D4DB28 /* more.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +421,7 @@
 				71F6F48B1DF071BF00D4DB28 /* GHStatusModel.m in Sources */,
 				71F6F4B41DF090A000D4DB28 /* UIScreen+Addision.m in Sources */,
 				71CFC96B1DF04076000ABC3B /* ViewController.m in Sources */,
+				71F6F4D81DF1830300D4DB28 /* MoreViewController.m in Sources */,
 				71CFC9681DF04076000ABC3B /* AppDelegate.m in Sources */,
 				71F6F4881DF06F4800D4DB28 /* Utility.m in Sources */,
 				71CFC9651DF04075000ABC3B /* main.m in Sources */,
