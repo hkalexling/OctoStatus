@@ -44,6 +44,10 @@
 	return YES;
 }
 
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+	[UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+}
+
 - (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
 	
 	NSLog(@"checking lastest status");
