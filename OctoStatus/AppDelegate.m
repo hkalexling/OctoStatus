@@ -33,6 +33,12 @@
 	
 	[UIApplication sharedApplication].applicationIconBadgeNumber = 0;
 	
+	// Save NSLog output to file in document directory. Only for testing purpose.
+//	NSArray *allPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//	NSString *documentsDirectory = [allPaths objectAtIndex:0];
+//	NSString *pathForLog = [documentsDirectory stringByAppendingPathComponent:@"octostatus.log"];
+//	freopen([pathForLog cStringUsingEncoding:NSASCIIStringEncoding],"a+",stderr);
+	
 	[Utility clearAPI];
 	
 	return YES;

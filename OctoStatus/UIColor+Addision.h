@@ -12,6 +12,7 @@
 @interface UIColor(Addision)
 
 + (UIColor *)colorWith:(GHStatus *)status;
+
 + (UIColor *)GHGreenColor;
 + (UIColor *)GHYellowColor;
 + (UIColor *)GHRedColor;

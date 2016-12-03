@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		02D1440CD2046AD48980DD44 /* Pods_OctoStatus_Today.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ED7B83C3FE599806C84114 /* Pods_OctoStatus_Today.framework */; };
+		711AA1341DF31713004FD4FD /* dgactivityindicatorview.html in Resources */ = {isa = PBXBuildFile; fileRef = 711AA1311DF31713004FD4FD /* dgactivityindicatorview.html */; };
+		711AA1351DF31713004FD4FD /* iso8601dateformatter.html in Resources */ = {isa = PBXBuildFile; fileRef = 711AA1321DF31713004FD4FD /* iso8601dateformatter.html */; };
+		711AA1361DF31713004FD4FD /* reactiveobjc.html in Resources */ = {isa = PBXBuildFile; fileRef = 711AA1331DF31713004FD4FD /* reactiveobjc.html */; };
+		71BF63F11DF302EB008CE785 /* afnetworking.html in Resources */ = {isa = PBXBuildFile; fileRef = 71BF63F01DF302EB008CE785 /* afnetworking.html */; };
 		71CFC9651DF04075000ABC3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CFC9641DF04075000ABC3B /* main.m */; };
 		71CFC9681DF04076000ABC3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CFC9671DF04076000ABC3B /* AppDelegate.m */; };
 		71CFC96B1DF04076000ABC3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CFC96A1DF04076000ABC3B /* ViewController.m */; };
@@ -61,6 +65,10 @@
 /* Begin PBXFileReference section */
 		2B7F7B17AA72179FAE708E47 /* Pods-OctoStatus-Today.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoStatus-Today.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OctoStatus-Today/Pods-OctoStatus-Today.debug.xcconfig"; sourceTree = "<group>"; };
 		47B843B158CD58BD5519898E /* Pods-OctoStatus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoStatus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OctoStatus/Pods-OctoStatus.debug.xcconfig"; sourceTree = "<group>"; };
+		711AA1311DF31713004FD4FD /* dgactivityindicatorview.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = dgactivityindicatorview.html; sourceTree = "<group>"; };
+		711AA1321DF31713004FD4FD /* iso8601dateformatter.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = iso8601dateformatter.html; sourceTree = "<group>"; };
+		711AA1331DF31713004FD4FD /* reactiveobjc.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = reactiveobjc.html; sourceTree = "<group>"; };
+		71BF63F01DF302EB008CE785 /* afnetworking.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = afnetworking.html; sourceTree = "<group>"; };
 		71CFC9601DF04075000ABC3B /* OctoStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OctoStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71CFC9641DF04075000ABC3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		71CFC9661DF04076000ABC3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -134,6 +142,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		711AA1371DF32098004FD4FD /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				71F6F4D91DF190A000D4DB28 /* more.html */,
+				71BF63F01DF302EB008CE785 /* afnetworking.html */,
+				711AA1311DF31713004FD4FD /* dgactivityindicatorview.html */,
+				711AA1321DF31713004FD4FD /* iso8601dateformatter.html */,
+				711AA1331DF31713004FD4FD /* reactiveobjc.html */,
+			);
+			name = HTML;
+			sourceTree = "<group>";
+		};
 		71CFC9571DF04075000ABC3B = {
 			isa = PBXGroup;
 			children = (
@@ -174,7 +194,7 @@
 				71F6F48D1DF08B0300D4DB28 /* UIColor+Addision.m */,
 				71F6F4B21DF090A000D4DB28 /* UIScreen+Addision.h */,
 				71F6F4B31DF090A000D4DB28 /* UIScreen+Addision.m */,
-				71F6F4D91DF190A000D4DB28 /* more.html */,
+				711AA1371DF32098004FD4FD /* HTML */,
 				71CFC96C1DF04076000ABC3B /* Main.storyboard */,
 				71CFC96F1DF04076000ABC3B /* Assets.xcassets */,
 				71CFC9711DF04076000ABC3B /* LaunchScreen.storyboard */,
@@ -319,8 +339,12 @@
 			files = (
 				71CFC9731DF04076000ABC3B /* LaunchScreen.storyboard in Resources */,
 				71CFC9701DF04076000ABC3B /* Assets.xcassets in Resources */,
+				711AA1351DF31713004FD4FD /* iso8601dateformatter.html in Resources */,
+				71BF63F11DF302EB008CE785 /* afnetworking.html in Resources */,
 				71CFC96E1DF04076000ABC3B /* Main.storyboard in Resources */,
+				711AA1361DF31713004FD4FD /* reactiveobjc.html in Resources */,
 				71F6F4DA1DF190A000D4DB28 /* more.html in Resources */,
+				711AA1341DF31713004FD4FD /* dgactivityindicatorview.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
