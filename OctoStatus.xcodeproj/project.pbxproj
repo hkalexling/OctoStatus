@@ -154,6 +154,53 @@
 			name = HTML;
 			sourceTree = "<group>";
 		};
+		711AA15B1DF33507004FD4FD /* GitHub */ = {
+			isa = PBXGroup;
+			children = (
+				71F6F4891DF071BF00D4DB28 /* GHStatusModel.h */,
+				71F6F48A1DF071BF00D4DB28 /* GHStatusModel.m */,
+				71CFC97A1DF042F4000ABC3B /* GHStatusAPIManager.h */,
+				71CFC97B1DF042F4000ABC3B /* GHStatusAPIManager.m */,
+			);
+			name = GitHub;
+			sourceTree = "<group>";
+		};
+		711AA15C1DF33511004FD4FD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				71F6F4861DF06F4800D4DB28 /* Utility.h */,
+				71F6F4871DF06F4800D4DB28 /* Utility.m */,
+				71F6F48C1DF08B0300D4DB28 /* UIColor+Addision.h */,
+				71F6F48D1DF08B0300D4DB28 /* UIColor+Addision.m */,
+				71F6F4B21DF090A000D4DB28 /* UIScreen+Addision.h */,
+				71F6F4B31DF090A000D4DB28 /* UIScreen+Addision.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		711AA15D1DF3352B004FD4FD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				71CFC96C1DF04076000ABC3B /* Main.storyboard */,
+				71CFC96F1DF04076000ABC3B /* Assets.xcassets */,
+				71CFC9711DF04076000ABC3B /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		711AA15E1DF3355C004FD4FD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				71CFC9661DF04076000ABC3B /* AppDelegate.h */,
+				71CFC9671DF04076000ABC3B /* AppDelegate.m */,
+				71CFC9691DF04076000ABC3B /* ViewController.h */,
+				71CFC96A1DF04076000ABC3B /* ViewController.m */,
+				71F6F4D61DF1830300D4DB28 /* MoreViewController.h */,
+				71F6F4D71DF1830300D4DB28 /* MoreViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		71CFC9571DF04075000ABC3B = {
 			isa = PBXGroup;
 			children = (
@@ -177,28 +224,11 @@
 		71CFC9621DF04075000ABC3B /* OctoStatus */ = {
 			isa = PBXGroup;
 			children = (
-				71F6F4CC1DF09BA900D4DB28 /* OctoStatus.entitlements */,
-				71CFC9661DF04076000ABC3B /* AppDelegate.h */,
-				71CFC9671DF04076000ABC3B /* AppDelegate.m */,
-				71CFC9691DF04076000ABC3B /* ViewController.h */,
-				71CFC96A1DF04076000ABC3B /* ViewController.m */,
-				71F6F4D61DF1830300D4DB28 /* MoreViewController.h */,
-				71F6F4D71DF1830300D4DB28 /* MoreViewController.m */,
-				71F6F4891DF071BF00D4DB28 /* GHStatusModel.h */,
-				71F6F48A1DF071BF00D4DB28 /* GHStatusModel.m */,
-				71CFC97A1DF042F4000ABC3B /* GHStatusAPIManager.h */,
-				71CFC97B1DF042F4000ABC3B /* GHStatusAPIManager.m */,
-				71F6F4861DF06F4800D4DB28 /* Utility.h */,
-				71F6F4871DF06F4800D4DB28 /* Utility.m */,
-				71F6F48C1DF08B0300D4DB28 /* UIColor+Addision.h */,
-				71F6F48D1DF08B0300D4DB28 /* UIColor+Addision.m */,
-				71F6F4B21DF090A000D4DB28 /* UIScreen+Addision.h */,
-				71F6F4B31DF090A000D4DB28 /* UIScreen+Addision.m */,
+				711AA15E1DF3355C004FD4FD /* Controllers */,
+				711AA15B1DF33507004FD4FD /* GitHub */,
+				711AA15C1DF33511004FD4FD /* Utilities */,
 				711AA1371DF32098004FD4FD /* HTML */,
-				71CFC96C1DF04076000ABC3B /* Main.storyboard */,
-				71CFC96F1DF04076000ABC3B /* Assets.xcassets */,
-				71CFC9711DF04076000ABC3B /* LaunchScreen.storyboard */,
-				71CFC9741DF04076000ABC3B /* Info.plist */,
+				711AA15D1DF3352B004FD4FD /* UI */,
 				71CFC9631DF04075000ABC3B /* Supporting Files */,
 			);
 			path = OctoStatus;
@@ -207,6 +237,8 @@
 		71CFC9631DF04075000ABC3B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				71F6F4CC1DF09BA900D4DB28 /* OctoStatus.entitlements */,
+				71CFC9741DF04076000ABC3B /* Info.plist */,
 				71CFC9641DF04075000ABC3B /* main.m */,
 			);
 			name = "Supporting Files";
